@@ -3,3 +3,4 @@ University of Advancing Technology CSC318 Software Engineering Principles Projec
 
 Project Members:
 Stephen Ouellette
+Ryan Bachman
