@@ -67,23 +67,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Connection.cs" />
+    <Compile Include="TherapistPortalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TherapistPortalForm.Designer.cs">
+      <DependentUpon>TherapistPortalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationPortalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationPortalForm.Designer.cs">
+      <DependentUpon>RegistrationPortalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeePortalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeePortalForm.Designer.cs">
+      <DependentUpon>EmployeePortalForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerLookUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CustomerLookUpForm.Designer.cs">
       <DependentUpon>CustomerLookUpForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TherapistAccountForm.cs">
+    <Compile Include="ClientPortalForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TherapistAccountForm.Designer.cs">
-      <DependentUpon>TherapistAccountForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TherapistPortaForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TherapistPortaForm.Designer.cs">
-      <DependentUpon>TherapistPortaForm.cs</DependentUpon>
+    <Compile Include="ClientPortalForm.Designer.cs">
+      <DependentUpon>ClientPortalForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenuForm.cs">
       <SubType>Form</SubType>
@@ -101,14 +113,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RuntimeTextTemplate1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TherapistPortalForm.resx">
+      <DependentUpon>TherapistPortalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationPortalForm.resx">
+      <DependentUpon>RegistrationPortalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeePortalForm.resx">
+      <DependentUpon>EmployeePortalForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerLookUpForm.resx">
       <DependentUpon>CustomerLookUpForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TherapistAccountForm.resx">
-      <DependentUpon>TherapistAccountForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TherapistPortaForm.resx">
-      <DependentUpon>TherapistPortaForm.cs</DependentUpon>
+    <EmbeddedResource Include="ClientPortalForm.resx">
+      <DependentUpon>ClientPortalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenuForm.resx">
       <DependentUpon>MainMenuForm.cs</DependentUpon>

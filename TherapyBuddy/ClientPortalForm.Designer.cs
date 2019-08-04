@@ -1,6 +1,6 @@
 ﻿namespace TherapyBuddy
 {
-    partial class TherapistPortalForm
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -26,39 +26,48 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponentPorta()
+        private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button2
+            // button3
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button2.Location = new System.Drawing.Point(166, 234);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(198, 43);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Scheduling";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(103, 86);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(273, 60);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "My Account";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button4.Location = new System.Drawing.Point(166, 138);
+            this.button4.Location = new System.Drawing.Point(103, 169);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(198, 41);
-            this.button4.TabIndex = 7;
-            this.button4.Text = " My Portal";
+            this.button4.Size = new System.Drawing.Size(273, 60);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Book  New Appointment";
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(103, 252);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(273, 60);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "Manage My Appointments";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // LoginForm
             // 
-            this.ClientSize = new System.Drawing.Size(524, 488);
+            this.ClientSize = new System.Drawing.Size(513, 415);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
             this.Name = "LoginForm";
-            this.Text = "Therapist Portal";
+            this.Text = "Client  Portal";
             this.ResumeLayout(false);
 
         }
@@ -71,8 +80,15 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.RichTextBox richTextBox4;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 
