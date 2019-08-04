@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TherapyBuddy
 {
-    public partial class LoginForm : Form
+    public partial class CustomerLookupForm : Form
     {
-        public LoginForm()
+        public CustomerLookupForm()
         {
             InitializeComponent();
         }
@@ -28,6 +28,11 @@ namespace TherapyBuddy
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CustomerLookupForm_Load(object sender, EventArgs e)
         {
 
         }

@@ -69,7 +69,7 @@
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Name = "LoginForm";
+            this.Name = "TherapistAccountForm";
             this.Text = "Therapist Account ";
             this.ResumeLayout(false);
 

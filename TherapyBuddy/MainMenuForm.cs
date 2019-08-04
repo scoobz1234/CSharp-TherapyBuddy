@@ -68,12 +68,12 @@ namespace TherapyBuddy
             this.Controls.Add(this.button2);
             this.Name = "MainMenu";
             this.Text = "Main Menu ";
-            this.Load += new System.EventHandler(this.LoginForm_Load);
+            this.Load += new System.EventHandler(this.MainMenuForm_Load);
             this.ResumeLayout(false);
 
         }
 
-        private void LoginForm_Load(object sender, EventArgs e)
+        private void MainMenuForm_Load(object sender, EventArgs e)
         {
 
         }

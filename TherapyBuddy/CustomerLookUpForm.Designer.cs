@@ -60,14 +60,15 @@
             this.button10.Text = "Customer Reports ";
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // LoginForm
+            // CustomerLookupForm
             // 
             this.ClientSize = new System.Drawing.Size(402, 447);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
-            this.Name = "LoginForm";
+            this.Name = "CustomerLookupForm";
             this.Text = "Customer Look UP ";
+            this.Load += new System.EventHandler(this.CustomerLookupForm_Load);
             this.ResumeLayout(false);
 
         }
