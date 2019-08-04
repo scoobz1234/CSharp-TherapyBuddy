@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TherapyBuddy
 {
-    public partial class LoginForm : Form
+    public partial class EmployeePortalForm : Form
     {
-        public LoginForm()
+        public EmployeePortalForm()
         {
             InitializeComponent();
         }

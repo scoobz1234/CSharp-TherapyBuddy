@@ -1,6 +1,6 @@
 ﻿namespace TherapyBuddy
 {
-    partial class LoginForm
+    partial class TherapistPortalForm
     {
         /// <summary>
         /// Required designer variable.

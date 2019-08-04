@@ -1,6 +1,6 @@
 ﻿namespace TherapyBuddy
 {
-    partial class LoginForm
+    partial class ClientPortalForm
     {
         /// <summary>
         /// Required designer variable.
@@ -60,14 +60,14 @@
             this.button5.Text = "Manage My Appointments";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // LoginForm
+            // ClientPortalForm
             // 
             this.ClientSize = new System.Drawing.Size(513, 415);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Name = "LoginForm";
-            this.Text = "Client  Portal";
+            this.Name = "ClientPortalForm";
+            this.Text = "Client Portal";
             this.ResumeLayout(false);
 
         }
