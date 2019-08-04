@@ -15,6 +15,14 @@ namespace TherapyBuddy
         public LoginForm()
         {
             InitializeComponent();
+            this.Hide();
+            MainMenu main = new MainMenu();
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
