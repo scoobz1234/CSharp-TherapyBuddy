@@ -1,6 +1,6 @@
 ﻿namespace TherapyBuddy
 {
-    partial class LoginForm
+    partial class TherapistPortalForm
     {
         /// <summary>
         /// Required designer variable.
@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        private void InitializeComponentPorta()
         {
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
