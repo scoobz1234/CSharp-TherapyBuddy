@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text;
 using TherapyBuddy.Classes;
+using TherapyBuddy.Forms;
 
 namespace TherapyBuddy
 {
@@ -17,13 +18,13 @@ namespace TherapyBuddy
         [STAThread]
         static void Main(string[] args)
         {
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-            Connection c = new Connection();
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new FrmLogin());
+           // Connection c = new Connection();
 
-            c.ConnectToDB();
-            
+           // c.ConnectToDB();
+
         }
     }
 }

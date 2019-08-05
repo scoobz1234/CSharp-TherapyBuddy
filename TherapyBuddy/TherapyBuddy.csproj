@@ -67,44 +67,44 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Connection.cs" />
-    <Compile Include="TherapistPortalForm.cs">
+    <Compile Include="Forms\TherapistPortalForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TherapistPortalForm.Designer.cs">
+    <Compile Include="Forms\TherapistPortalForm.Designer.cs">
       <DependentUpon>TherapistPortalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrationPortalForm.cs">
+    <Compile Include="Forms\RegistrationPortalForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrationPortalForm.Designer.cs">
+    <Compile Include="Forms\RegistrationPortalForm.Designer.cs">
       <DependentUpon>RegistrationPortalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployeePortalForm.cs">
+    <Compile Include="Forms\EmployeePortalForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeePortalForm.Designer.cs">
+    <Compile Include="Forms\EmployeePortalForm.Designer.cs">
       <DependentUpon>EmployeePortalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomerLookUpForm.cs">
+    <Compile Include="Forms\CustomerLookUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerLookUpForm.Designer.cs">
+    <Compile Include="Forms\CustomerLookUpForm.Designer.cs">
       <DependentUpon>CustomerLookUpForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientPortalForm.cs">
+    <Compile Include="Forms\ClientPortalForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientPortalForm.Designer.cs">
+    <Compile Include="Forms\ClientPortalForm.Designer.cs">
       <DependentUpon>ClientPortalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainMenuForm.cs">
+    <Compile Include="Forms\FrmMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Forms\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="Forms\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,26 +113,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RuntimeTextTemplate1.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TherapistPortalForm.resx">
+    <EmbeddedResource Include="Forms\TherapistPortalForm.resx">
       <DependentUpon>TherapistPortalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrationPortalForm.resx">
+    <EmbeddedResource Include="Forms\RegistrationPortalForm.resx">
       <DependentUpon>RegistrationPortalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeePortalForm.resx">
+    <EmbeddedResource Include="Forms\EmployeePortalForm.resx">
       <DependentUpon>EmployeePortalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomerLookUpForm.resx">
+    <EmbeddedResource Include="Forms\CustomerLookUpForm.resx">
       <DependentUpon>CustomerLookUpForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientPortalForm.resx">
+    <EmbeddedResource Include="Forms\ClientPortalForm.resx">
       <DependentUpon>ClientPortalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuForm.resx">
-      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmMainMenu.resx">
+      <DependentUpon>FrmMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
