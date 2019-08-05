@@ -63,7 +63,7 @@ namespace TherapyBuddy.Forms
             // 
             // btnLogout
             // 
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(255, 128, 128);
             this.btnLogout.Location = new System.Drawing.Point(340, 379);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(86, 49);
@@ -80,7 +80,7 @@ namespace TherapyBuddy.Forms
             this.Controls.Add(this.btnClient);
             this.Controls.Add(this.btnTherapist);
             this.Name = "FrmMainMenu";
-            this.Text = "Main Menu ";
+            this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.MainMenuForm_Load);
             this.ResumeLayout(false);
 

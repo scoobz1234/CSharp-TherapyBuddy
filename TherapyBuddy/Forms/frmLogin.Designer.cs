@@ -17,6 +17,7 @@
             }
             base.Dispose(disposing);
         }
+        // this is a comment...
 
         #region Windows Form Designer generated code
 
