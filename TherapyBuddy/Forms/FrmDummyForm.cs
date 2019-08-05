@@ -8,11 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TherapyBuddy
-{
-    public partial class LoginForm : Form
-    {
-        public LoginForm()
+namespace TherapyBuddy.Forms {
+    public partial class FrmDummyForm : Form {
+        public FrmDummyForm()
         {
             InitializeComponent();
             this.Hide();
