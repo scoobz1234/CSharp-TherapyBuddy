@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MySql.Data;
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 
 namespace TherapyBuddy.Classes
 {
@@ -26,38 +20,16 @@ namespace TherapyBuddy.Classes
             connectionString += ";SslMode=none";
         }
 
-        public void ConnectToDB()
+        public MySqlConnection ConnectToDB()
         {
             MySqlConnection dbConnection = new MySqlConnection(connectionString);
-            try
-            {
-                Console.WriteLine("Connection to MySql...");
-                // open the connection...
-                dbConnection.Open();
+            return dbConnection;
+        }
 
-                // Query the Database
-                string query = "SELECT * From therapist_data";
-                MySqlCommand cmd = new MySqlCommand(query, dbConnection);
-                MySqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    for (int i = 0; i < reader.FieldCount; i++)
-                    {
-                        Console.Write(reader.GetValue(i) + "   ");
-                    }
-                    Console.WriteLine("");
-                }
-                reader.Close();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
-            }
-            //Close the connection
-            dbConnection.Close();
-
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadLine();
+        public MySqlCommand QueryCommand(MySqlConnection conn)
+        {
+            MySqlCommand cmdDataBase = new MySqlCommand("SELECT * from employee_data;", conn);
+            return cmdDataBase;
         }
     }
 }

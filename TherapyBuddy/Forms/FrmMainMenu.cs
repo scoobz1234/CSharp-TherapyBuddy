@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TherapyBuddy.Forms
@@ -60,10 +53,11 @@ namespace TherapyBuddy.Forms
             this.btnEmployee.TabIndex = 6;
             this.btnEmployee.Text = "Employee";
             this.btnEmployee.UseVisualStyleBackColor = true;
+            this.btnEmployee.Click += new System.EventHandler(this.BtnEmployee_Click);
             // 
             // btnLogout
             // 
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(255, 128, 128);
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnLogout.Location = new System.Drawing.Point(340, 379);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(86, 49);
@@ -100,6 +94,13 @@ namespace TherapyBuddy.Forms
         {
             var login = new FrmLogin();
             login.Show();
+            Hide();
+        }
+
+        private void BtnEmployee_Click(object sender, EventArgs e)
+        {
+            var database = new FrmDataBaseQuery();
+            database.Show();
             Hide();
         }
     }
