@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using TherapyBuddy.Forms;
+using TherapyBuddy.Classes;
 
 namespace TherapyBuddy
 {
@@ -17,7 +18,6 @@ namespace TherapyBuddy
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmLogin());
-
 
         }
     }
