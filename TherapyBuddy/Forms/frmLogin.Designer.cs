@@ -45,6 +45,7 @@
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Welcome to Therapy Buddy ";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
             // lblUserName
             // 
@@ -86,7 +87,7 @@
             // 
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(301, 249);
+            this.btnSubmit.Location = new System.Drawing.Point(301, 281);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(150, 61);
             this.btnSubmit.TabIndex = 5;
@@ -98,7 +99,7 @@
             // 
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(88, 249);
+            this.btnCancel.Location = new System.Drawing.Point(92, 281);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(150, 61);
             this.btnCancel.TabIndex = 6;
