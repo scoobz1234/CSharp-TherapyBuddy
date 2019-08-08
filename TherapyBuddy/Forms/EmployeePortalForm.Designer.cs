@@ -1,6 +1,6 @@
 ﻿namespace TherapyBuddy
 {
-    partial class EmployeePortalForm
+    partial class FrmEmployeePortal
     {
         /// <summary>
         /// Required designer variable.
@@ -51,12 +51,12 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // LoginForm
+            // FrmEmployeePortal
             // 
             this.ClientSize = new System.Drawing.Size(502, 476);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
-            this.Name = "LoginForm";
+            this.Name = "FrmEmployeePortal";
             this.Text = "Employee Portal";
             this.ResumeLayout(false);
 
