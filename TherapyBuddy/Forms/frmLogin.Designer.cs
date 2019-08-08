@@ -34,6 +34,8 @@
             this.entPassword = new System.Windows.Forms.RichTextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.LblRememberPass = new System.Windows.Forms.Label();
+            this.ChbRememberPass = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -87,7 +89,7 @@
             // 
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(301, 281);
+            this.btnSubmit.Location = new System.Drawing.Point(313, 290);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(150, 61);
             this.btnSubmit.TabIndex = 5;
@@ -99,7 +101,7 @@
             // 
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(92, 281);
+            this.btnCancel.Location = new System.Drawing.Point(92, 290);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(150, 61);
             this.btnCancel.TabIndex = 6;
@@ -107,9 +109,29 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // LblRememberPass
+            // 
+            this.LblRememberPass.AutoSize = true;
+            this.LblRememberPass.Location = new System.Drawing.Point(172, 240);
+            this.LblRememberPass.Name = "LblRememberPass";
+            this.LblRememberPass.Size = new System.Drawing.Size(89, 17);
+            this.LblRememberPass.TabIndex = 7;
+            this.LblRememberPass.Text = "Remeber Me";
+            // 
+            // ChbRememberPass
+            // 
+            this.ChbRememberPass.AutoSize = true;
+            this.ChbRememberPass.Location = new System.Drawing.Point(144, 240);
+            this.ChbRememberPass.Name = "ChbRememberPass";
+            this.ChbRememberPass.Size = new System.Drawing.Size(18, 17);
+            this.ChbRememberPass.TabIndex = 8;
+            this.ChbRememberPass.UseVisualStyleBackColor = true;
+            // 
             // FrmLogin
             // 
             this.ClientSize = new System.Drawing.Size(574, 354);
+            this.Controls.Add(this.ChbRememberPass);
+            this.Controls.Add(this.LblRememberPass);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.entPassword);
@@ -119,6 +141,7 @@
             this.Controls.Add(this.lblTitle);
             this.Name = "FrmLogin";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -132,6 +155,8 @@
         private System.Windows.Forms.RichTextBox entPassword;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label LblRememberPass;
+        private System.Windows.Forms.CheckBox ChbRememberPass;
     }
 }
 

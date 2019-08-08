@@ -17,7 +17,7 @@ namespace TherapyBuddy
             InitializeComponent();
         }
 
-        private void lblgreeting_Click(object sender, EventArgs e)
+        private void lblGreeting_Click(object sender, EventArgs e)
         {
 
         }
@@ -32,6 +32,8 @@ namespace TherapyBuddy
             var loginForm = new FrmLogin();
             loginForm.Show();
             Hide();
+            //needs to be fixed
+            /*has to be bolded and larger txt. ALso has to be the 1st screen*/
         }
     }
 }
