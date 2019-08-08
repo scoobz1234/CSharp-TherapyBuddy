@@ -44,6 +44,7 @@ namespace TherapyBuddy.Forms
             this.btnClient.TabIndex = 5;
             this.btnClient.Text = "Client";
             this.btnClient.UseVisualStyleBackColor = true;
+            this.btnClient.Click += new System.EventHandler(this.btnClient_Click);
             // 
             // btnEmployee
             // 
@@ -88,7 +89,9 @@ namespace TherapyBuddy.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            var therapistPortal = new FrmTherapistPortal();
+            therapistPortal.Show();
+            Hide();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -102,6 +105,13 @@ namespace TherapyBuddy.Forms
         {
             var database = new FrmDataBaseQuery();
             database.Show();
+            Hide();
+        }
+
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+            var clientPortal = new FrmCLientPortal();
+            clientPortal.Show();
             Hide();
         }
     }

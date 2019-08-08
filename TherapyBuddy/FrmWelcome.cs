@@ -24,7 +24,7 @@ namespace TherapyBuddy
 
         private void FrmWelcome_Load(object sender, EventArgs e)
         {
-
+            InitializeComponent();
         }
 
         private void BtnStart_Click(object sender, EventArgs e)
