@@ -140,6 +140,7 @@
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.lblTitle);
             this.Name = "FrmLogin";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

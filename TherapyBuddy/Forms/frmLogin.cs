@@ -34,5 +34,10 @@ namespace TherapyBuddy.Forms
         {
 
         }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
