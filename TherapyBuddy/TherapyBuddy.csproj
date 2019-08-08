@@ -115,17 +115,17 @@
     <Compile Include="Forms\FrmRegistrationPortal.Designer.cs">
       <DependentUpon>FrmRegistrationPortal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\EmployeePortalForm.cs">
+    <Compile Include="Forms\FrmEmployeePortal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\EmployeePortalForm.Designer.cs">
-      <DependentUpon>EmployeePortalForm.cs</DependentUpon>
+    <Compile Include="Forms\FrmEmployeePortal.Designer.cs">
+      <DependentUpon>FrmEmployeePortal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CustomerLookUpForm.cs">
+    <Compile Include="Forms\FrmCustomerLookUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CustomerLookUpForm.Designer.cs">
-      <DependentUpon>CustomerLookUpForm.cs</DependentUpon>
+    <Compile Include="Forms\FrmCustomerLookUp.Designer.cs">
+      <DependentUpon>FrmCustomerLookUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmClientPortal.cs">
       <SubType>Form</SubType>
@@ -158,11 +158,11 @@
     <EmbeddedResource Include="Forms\FrmRegistrationPortal.resx">
       <DependentUpon>FrmRegistrationPortal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EmployeePortalForm.resx">
-      <DependentUpon>EmployeePortalForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmEmployeePortal.resx">
+      <DependentUpon>FrmEmployeePortal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CustomerLookUpForm.resx">
-      <DependentUpon>CustomerLookUpForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmCustomerLookUp.resx">
+      <DependentUpon>FrmCustomerLookUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmClientPortal.resx">
       <DependentUpon>FrmClientPortal.cs</DependentUpon>
