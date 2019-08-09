@@ -28,56 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnCustReports = new System.Windows.Forms.Button();
+            this.btnNotes = new System.Windows.Forms.Button();
+            this.btnMissApt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button10
+            // btnCustReports
             // 
-            this.button10.Location = new System.Drawing.Point(179, 272);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(216, 53);
-            this.button10.TabIndex = 5;
-            this.button10.Text = "Customer Reports ";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnCustReports.Location = new System.Drawing.Point(179, 272);
+            this.btnCustReports.Name = "btnCustReports";
+            this.btnCustReports.Size = new System.Drawing.Size(216, 53);
+            this.btnCustReports.TabIndex = 5;
+            this.btnCustReports.Text = "Customer Reports ";
+            this.btnCustReports.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btnNotes
             // 
-            this.button9.Location = new System.Drawing.Point(179, 184);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(216, 53);
-            this.button9.TabIndex = 4;
-            this.button9.Text = "S O A P Notes";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnNotes.Location = new System.Drawing.Point(179, 184);
+            this.btnNotes.Name = "btnNotes";
+            this.btnNotes.Size = new System.Drawing.Size(216, 53);
+            this.btnNotes.TabIndex = 4;
+            this.btnNotes.Text = "S O A P Notes";
+            this.btnNotes.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnMissApt
             // 
-            this.button8.Location = new System.Drawing.Point(179, 111);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(216, 53);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Missed Appointments ";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnMissApt.Location = new System.Drawing.Point(179, 111);
+            this.btnMissApt.Name = "btnMissApt";
+            this.btnMissApt.Size = new System.Drawing.Size(216, 53);
+            this.btnMissApt.TabIndex = 3;
+            this.btnMissApt.Text = "Missed Appointments ";
+            this.btnMissApt.UseVisualStyleBackColor = true;
             // 
             // FrmCustomerLookUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 450);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.btnCustReports);
+            this.Controls.Add(this.btnNotes);
+            this.Controls.Add(this.btnMissApt);
             this.Name = "FrmCustomerLookUp";
-            this.Text = "FrmCustomerLookUp";
+            this.Text = "Customer LookUp";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnCustReports;
+        private System.Windows.Forms.Button btnNotes;
+        private System.Windows.Forms.Button btnMissApt;
     }
 }

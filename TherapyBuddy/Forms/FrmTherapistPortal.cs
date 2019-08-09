@@ -16,5 +16,12 @@ namespace TherapyBuddy.Forms
         {
             InitializeComponent();
         }
+
+        private void btnCustLookup_Click(object sender, EventArgs e)
+        {
+            var custLookUP = new FrmCustomerLookUp();
+            custLookUP.Show();
+            Hide();
+        }
     }
 }

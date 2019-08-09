@@ -50,6 +50,7 @@
             this.btnCustLookup.TabIndex = 4;
             this.btnCustLookup.Text = "Customer Look up ";
             this.btnCustLookup.UseVisualStyleBackColor = true;
+            this.btnCustLookup.Click += new System.EventHandler(this.btnCustLookup_Click);
             // 
             // btnThMyAccount
             // 
