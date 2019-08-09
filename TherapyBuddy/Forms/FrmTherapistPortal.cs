@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TherapyBuddy
+namespace TherapyBuddy.Forms
 {
-    public partial class TherapistPortalForm : Form
+    public partial class FrmTherapistPortal : Form
     {
-        public TherapistPortalForm()
+        public FrmTherapistPortal()
         {
             InitializeComponent();
         }

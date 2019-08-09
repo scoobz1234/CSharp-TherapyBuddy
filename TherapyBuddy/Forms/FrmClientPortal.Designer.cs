@@ -69,7 +69,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Name = "FrmClientPortal";
-            this.Text = "FrmClientPortal";
+            this.Text = "Client Portal";
             this.ResumeLayout(false);
 
         }

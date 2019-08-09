@@ -121,29 +121,11 @@
     <Compile Include="Forms\FrmRegistrationPortal.Designer.cs">
       <DependentUpon>FrmRegistrationPortal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmTherapistPortal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmTherapistPortal.Designer.cs">
-      <DependentUpon>FrmTherapistPortal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmRegistrationPortal_old.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmRegistrationPortal_old.Designer.cs">
-      <DependentUpon>FrmRegistrationPortal_old.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FrmCustomerLookUp_old.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmCustomerLookUp_old.Designer.cs">
       <DependentUpon>FrmCustomerLookUp_old.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmClientPortal_old.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmClientPortal_old.Designer.cs">
-      <DependentUpon>FrmClientPortal_old.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmMainMenu.cs">
       <SubType>Form</SubType>
@@ -153,6 +135,12 @@
     </Compile>
     <Compile Include="Forms\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmTherapistPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTherapistPortal.Designer.cs">
+      <DependentUpon>FrmTherapistPortal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -173,23 +161,17 @@
     <EmbeddedResource Include="Forms\FrmRegistrationPortal.resx">
       <DependentUpon>FrmRegistrationPortal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmTherapistPortal.resx">
-      <DependentUpon>FrmTherapistPortal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmRegistrationPortal_old.resx">
-      <DependentUpon>FrmRegistrationPortal_old.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmCustomerLookUp_old.resx">
       <DependentUpon>FrmCustomerLookUp_old.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmClientPortal_old.resx">
-      <DependentUpon>FrmClientPortal_old.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmMainMenu.resx">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTherapistPortal.resx">
+      <DependentUpon>FrmTherapistPortal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -90,7 +90,7 @@ namespace TherapyBuddy.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var therapistPortal = new TherapyBuddy.Forms.FrmMainMenu();
+            var therapistPortal = new FrmTherapistPortal();
             therapistPortal.Show();
             Hide();
         }
