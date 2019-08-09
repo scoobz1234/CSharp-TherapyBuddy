@@ -30,7 +30,7 @@
         {
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnCliMyAccount = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button5
@@ -51,14 +51,14 @@
             this.button4.Text = "Book  New Appointment";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnCliMyAccount
             // 
-            this.button3.Location = new System.Drawing.Point(264, 112);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(273, 60);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "My Account";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCliMyAccount.Location = new System.Drawing.Point(264, 112);
+            this.btnCliMyAccount.Name = "btnCliMyAccount";
+            this.btnCliMyAccount.Size = new System.Drawing.Size(273, 60);
+            this.btnCliMyAccount.TabIndex = 3;
+            this.btnCliMyAccount.Text = "My Account";
+            this.btnCliMyAccount.UseVisualStyleBackColor = true;
             // 
             // FrmClientPortal
             // 
@@ -67,7 +67,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnCliMyAccount);
             this.Name = "FrmClientPortal";
             this.Text = "Client Portal";
             this.ResumeLayout(false);
@@ -78,6 +78,6 @@
 
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnCliMyAccount;
     }
 }

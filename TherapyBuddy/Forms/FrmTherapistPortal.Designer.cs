@@ -28,46 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnThReports = new System.Windows.Forms.Button();
+            this.btnCustLookup = new System.Windows.Forms.Button();
+            this.btnThMyAccount = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button8
+            // btnThReports
             // 
-            this.button8.Location = new System.Drawing.Point(285, 290);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(231, 66);
-            this.button8.TabIndex = 5;
-            this.button8.Text = "Reports";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnThReports.Location = new System.Drawing.Point(285, 290);
+            this.btnThReports.Name = "btnThReports";
+            this.btnThReports.Size = new System.Drawing.Size(231, 66);
+            this.btnThReports.TabIndex = 5;
+            this.btnThReports.Text = "Reports";
+            this.btnThReports.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnCustLookup
             // 
-            this.button7.Location = new System.Drawing.Point(285, 191);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(231, 66);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "Customer Look up ";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnCustLookup.Location = new System.Drawing.Point(285, 191);
+            this.btnCustLookup.Name = "btnCustLookup";
+            this.btnCustLookup.Size = new System.Drawing.Size(231, 66);
+            this.btnCustLookup.TabIndex = 4;
+            this.btnCustLookup.Text = "Customer Look up ";
+            this.btnCustLookup.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnThMyAccount
             // 
-            this.button6.Location = new System.Drawing.Point(285, 95);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(231, 66);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "My Account";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnThMyAccount.Location = new System.Drawing.Point(285, 95);
+            this.btnThMyAccount.Name = "btnThMyAccount";
+            this.btnThMyAccount.Size = new System.Drawing.Size(231, 66);
+            this.btnThMyAccount.TabIndex = 3;
+            this.btnThMyAccount.Text = "My Account";
+            this.btnThMyAccount.UseVisualStyleBackColor = true;
             // 
             // FrmTherapistPortal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnThReports);
+            this.Controls.Add(this.btnCustLookup);
+            this.Controls.Add(this.btnThMyAccount);
             this.Name = "FrmTherapistPortal";
             this.Text = "Therapist Portal";
             this.ResumeLayout(false);
@@ -76,8 +76,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnThReports;
+        private System.Windows.Forms.Button btnCustLookup;
+        private System.Windows.Forms.Button btnThMyAccount;
     }
 }
