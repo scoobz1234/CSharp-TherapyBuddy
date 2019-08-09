@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnMgtMyApt = new System.Windows.Forms.Button();
+            this.btnBookNewApt = new System.Windows.Forms.Button();
             this.btnCliMyAccount = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button5
+            // btnMgtMyApt
             // 
-            this.button5.Location = new System.Drawing.Point(264, 278);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(273, 60);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Manage My Appointments";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnMgtMyApt.Location = new System.Drawing.Point(264, 278);
+            this.btnMgtMyApt.Name = "btnMgtMyApt";
+            this.btnMgtMyApt.Size = new System.Drawing.Size(273, 60);
+            this.btnMgtMyApt.TabIndex = 5;
+            this.btnMgtMyApt.Text = "Manage My Appointments";
+            this.btnMgtMyApt.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnBookNewApt
             // 
-            this.button4.Location = new System.Drawing.Point(264, 195);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(273, 60);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Book  New Appointment";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnBookNewApt.Location = new System.Drawing.Point(264, 195);
+            this.btnBookNewApt.Name = "btnBookNewApt";
+            this.btnBookNewApt.Size = new System.Drawing.Size(273, 60);
+            this.btnBookNewApt.TabIndex = 4;
+            this.btnBookNewApt.Text = "Book  New Appointment";
+            this.btnBookNewApt.UseVisualStyleBackColor = true;
             // 
             // btnCliMyAccount
             // 
@@ -65,8 +65,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnMgtMyApt);
+            this.Controls.Add(this.btnBookNewApt);
             this.Controls.Add(this.btnCliMyAccount);
             this.Name = "FrmClientPortal";
             this.Text = "Client Portal";
@@ -76,8 +76,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnMgtMyApt;
+        private System.Windows.Forms.Button btnBookNewApt;
         private System.Windows.Forms.Button btnCliMyAccount;
     }
 }
