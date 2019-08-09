@@ -89,8 +89,8 @@ namespace TherapyBuddy.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var therapistPortal = new FrmTherapistPortal();
-            therapistPortal.Show();
+            var therapistPortal = new FrmMainMenu();
+            mainMenu.Show();
             Hide();
         }
 
@@ -110,7 +110,7 @@ namespace TherapyBuddy.Forms
 
         private void btnClient_Click(object sender, EventArgs e)
         {
-            var clientPortal = new FrmCLientPortal();
+            var clientPortal = new FrmClientPortal();
             clientPortal.Show();
             Hide();
         }
