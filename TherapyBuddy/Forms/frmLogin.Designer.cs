@@ -44,7 +44,7 @@
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold);
             this.lblTitle.Location = new System.Drawing.Point(12, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(550, 96);
+            this.lblTitle.Size = new System.Drawing.Size(539, 62);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Welcome to Therapy Buddy ";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -113,7 +113,7 @@
             // lblRememberPass
             // 
             this.lblRememberPass.AutoSize = true;
-            this.lblRememberPass.Location = new System.Drawing.Point(172, 240);
+            this.lblRememberPass.Location = new System.Drawing.Point(172, 239);
             this.lblRememberPass.Name = "lblRememberPass";
             this.lblRememberPass.Size = new System.Drawing.Size(89, 17);
             this.lblRememberPass.TabIndex = 7;
