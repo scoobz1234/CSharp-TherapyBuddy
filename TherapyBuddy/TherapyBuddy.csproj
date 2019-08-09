@@ -133,12 +133,6 @@
     <Compile Include="Forms\FrmRegistrationPortal_old.Designer.cs">
       <DependentUpon>FrmRegistrationPortal_old.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmEmployeePortal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmEmployeePortal.Designer.cs">
-      <DependentUpon>FrmEmployeePortal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FrmCustomerLookUp_old.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,9 +178,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmRegistrationPortal_old.resx">
       <DependentUpon>FrmRegistrationPortal_old.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmEmployeePortal.resx">
-      <DependentUpon>FrmEmployeePortal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmCustomerLookUp_old.resx">
       <DependentUpon>FrmCustomerLookUp_old.cs</DependentUpon>
