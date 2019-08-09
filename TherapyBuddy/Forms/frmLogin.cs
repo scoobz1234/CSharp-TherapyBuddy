@@ -39,5 +39,10 @@ namespace TherapyBuddy.Forms
         {
 
         }
+
+        private void LblGreeting_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -34,8 +34,9 @@
             this.entPassword = new System.Windows.Forms.RichTextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.LblRememberPass = new System.Windows.Forms.Label();
+            this.lblRememberPass = new System.Windows.Forms.Label();
             this.ChbRememberPass = new System.Windows.Forms.CheckBox();
+            this.lblGreeting = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -109,14 +110,14 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // LblRememberPass
+            // lblRememberPass
             // 
-            this.LblRememberPass.AutoSize = true;
-            this.LblRememberPass.Location = new System.Drawing.Point(172, 240);
-            this.LblRememberPass.Name = "LblRememberPass";
-            this.LblRememberPass.Size = new System.Drawing.Size(89, 17);
-            this.LblRememberPass.TabIndex = 7;
-            this.LblRememberPass.Text = "Remeber Me";
+            this.lblRememberPass.AutoSize = true;
+            this.lblRememberPass.Location = new System.Drawing.Point(172, 240);
+            this.lblRememberPass.Name = "lblRememberPass";
+            this.lblRememberPass.Size = new System.Drawing.Size(89, 17);
+            this.lblRememberPass.TabIndex = 7;
+            this.lblRememberPass.Text = "Remeber Me";
             // 
             // ChbRememberPass
             // 
@@ -127,11 +128,23 @@
             this.ChbRememberPass.TabIndex = 8;
             this.ChbRememberPass.UseVisualStyleBackColor = true;
             // 
+            // lblGreeting
+            // 
+            this.lblGreeting.AutoSize = true;
+            this.lblGreeting.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblGreeting.Location = new System.Drawing.Point(141, 71);
+            this.lblGreeting.Name = "lblGreeting";
+            this.lblGreeting.Size = new System.Drawing.Size(269, 17);
+            this.lblGreeting.TabIndex = 9;
+            this.lblGreeting.Text = "We are delighted to give you VIP Service ";
+            this.lblGreeting.Click += new System.EventHandler(this.LblGreeting_Click);
+            // 
             // FrmLogin
             // 
             this.ClientSize = new System.Drawing.Size(574, 354);
+            this.Controls.Add(this.lblGreeting);
             this.Controls.Add(this.ChbRememberPass);
-            this.Controls.Add(this.LblRememberPass);
+            this.Controls.Add(this.lblRememberPass);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.entPassword);
@@ -156,8 +169,9 @@
         private System.Windows.Forms.RichTextBox entPassword;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Label LblRememberPass;
+        private System.Windows.Forms.Label lblRememberPass;
         private System.Windows.Forms.CheckBox ChbRememberPass;
+        private System.Windows.Forms.Label lblGreeting;
     }
 }
 
