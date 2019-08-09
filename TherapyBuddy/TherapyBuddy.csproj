@@ -97,29 +97,11 @@
   <ItemGroup>
     <Compile Include="Classes\NotificationService.cs" />
     <Compile Include="Classes\Connection.cs" />
-    <Compile Include="Forms\FrmDataBaseQuery.cs">
+    <Compile Include="Forms\FrmClientPortal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmDataBaseQuery.Designer.cs">
-      <DependentUpon>FrmDataBaseQuery.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmTherapistPortal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmTherapistPortal.Designer.cs">
-      <DependentUpon>FrmTherapistPortal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmRegistrationPortal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmRegistrationPortal.Designer.cs">
-      <DependentUpon>FrmRegistrationPortal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmEmployeePortal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmEmployeePortal.Designer.cs">
-      <DependentUpon>FrmEmployeePortal.cs</DependentUpon>
+    <Compile Include="Forms\FrmClientPortal.Designer.cs">
+      <DependentUpon>FrmClientPortal.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmCustomerLookUp.cs">
       <SubType>Form</SubType>
@@ -127,11 +109,47 @@
     <Compile Include="Forms\FrmCustomerLookUp.Designer.cs">
       <DependentUpon>FrmCustomerLookUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmClientPortal.cs">
+    <Compile Include="Forms\FrmDataBaseQuery.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmClientPortal.Designer.cs">
-      <DependentUpon>FrmClientPortal.cs</DependentUpon>
+    <Compile Include="Forms\FrmDataBaseQuery.Designer.cs">
+      <DependentUpon>FrmDataBaseQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmRegistrationPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRegistrationPortal.Designer.cs">
+      <DependentUpon>FrmRegistrationPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmTherapistPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTherapistPortal.Designer.cs">
+      <DependentUpon>FrmTherapistPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmRegistrationPortal_old.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRegistrationPortal_old.Designer.cs">
+      <DependentUpon>FrmRegistrationPortal_old.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmEmployeePortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmEmployeePortal.Designer.cs">
+      <DependentUpon>FrmEmployeePortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCustomerLookUp_old.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCustomerLookUp_old.Designer.cs">
+      <DependentUpon>FrmCustomerLookUp_old.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmClientPortal_old.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmClientPortal_old.Designer.cs">
+      <DependentUpon>FrmClientPortal_old.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmMainMenu.cs">
       <SubType>Form</SubType>
@@ -155,23 +173,32 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RuntimeTextTemplate1.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\FrmDataBaseQuery.resx">
-      <DependentUpon>FrmDataBaseQuery.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmTherapistPortal.resx">
-      <DependentUpon>FrmTherapistPortal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmRegistrationPortal.resx">
-      <DependentUpon>FrmRegistrationPortal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmEmployeePortal.resx">
-      <DependentUpon>FrmEmployeePortal.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmClientPortal.resx">
+      <DependentUpon>FrmClientPortal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmCustomerLookUp.resx">
       <DependentUpon>FrmCustomerLookUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmClientPortal.resx">
-      <DependentUpon>FrmClientPortal.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmDataBaseQuery.resx">
+      <DependentUpon>FrmDataBaseQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRegistrationPortal.resx">
+      <DependentUpon>FrmRegistrationPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTherapistPortal.resx">
+      <DependentUpon>FrmTherapistPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRegistrationPortal_old.resx">
+      <DependentUpon>FrmRegistrationPortal_old.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmEmployeePortal.resx">
+      <DependentUpon>FrmEmployeePortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCustomerLookUp_old.resx">
+      <DependentUpon>FrmCustomerLookUp_old.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmClientPortal_old.resx">
+      <DependentUpon>FrmClientPortal_old.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmMainMenu.resx">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>

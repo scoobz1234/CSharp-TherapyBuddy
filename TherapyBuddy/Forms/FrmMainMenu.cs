@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using TherapyBuddy.Classes;
+using TherapyBuddy.Forms;
 
 namespace TherapyBuddy.Forms
 {
@@ -89,8 +90,8 @@ namespace TherapyBuddy.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var therapistPortal = new FrmMainMenu();
-            mainMenu.Show();
+            var therapistPortal = new TherapyBuddy.Forms.FrmMainMenu();
+            therapistPortal.Show();
             Hide();
         }
 

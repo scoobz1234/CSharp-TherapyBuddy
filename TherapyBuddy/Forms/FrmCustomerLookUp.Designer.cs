@@ -1,6 +1,6 @@
-﻿namespace TherapyBuddy
+﻿namespace TherapyBuddy.Forms
 {
-    partial class CustomerLookupForm
+    partial class FrmCustomerLookUp
     {
         /// <summary>
         /// Required designer variable.
@@ -28,68 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(89, 95);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(216, 53);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "Missed Appointments ";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(89, 181);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(216, 53);
-            this.button9.TabIndex = 1;
-            this.button9.Text = "S O A P Notes";
-            this.button9.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(89, 267);
+            this.button10.Location = new System.Drawing.Point(292, 285);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(216, 53);
-            this.button10.TabIndex = 2;
+            this.button10.TabIndex = 5;
             this.button10.Text = "Customer Reports ";
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // CustomerLookupForm
+            // button9
             // 
-            this.ClientSize = new System.Drawing.Size(402, 447);
+            this.button9.Location = new System.Drawing.Point(292, 199);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(216, 53);
+            this.button9.TabIndex = 4;
+            this.button9.Text = "S O A P Notes";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(292, 113);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(216, 53);
+            this.button8.TabIndex = 3;
+            this.button8.Text = "Missed Appointments ";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // FrmCustomerLookUp
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
-            this.Name = "CustomerLookupForm";
-            this.Text = "Customer Look UP ";
-            this.Load += new System.EventHandler(this.CustomerLookupForm_Load);
+            this.Name = "FrmCustomerLookUp";
+            this.Text = "FrmCustomerLookUp";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
     }
 }
-
