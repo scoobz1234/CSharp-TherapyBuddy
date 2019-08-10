@@ -16,5 +16,15 @@ namespace TherapyBuddy.Forms
         {
             InitializeComponent();
         }
+
+        private void ToolsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
