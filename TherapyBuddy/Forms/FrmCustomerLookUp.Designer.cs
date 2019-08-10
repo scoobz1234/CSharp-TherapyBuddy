@@ -28,56 +28,104 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.dgvCustomer = new System.Windows.Forms.DataGridView();
+            this.entCustomerLast = new System.Windows.Forms.TextBox();
+            this.entCustomerFirst = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnGoBack = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button10
+            // dgvCustomer
             // 
-            this.button10.Location = new System.Drawing.Point(179, 272);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(216, 53);
-            this.button10.TabIndex = 5;
-            this.button10.Text = "Customer Reports ";
-            this.button10.UseVisualStyleBackColor = true;
+            this.dgvCustomer.AllowUserToAddRows = false;
+            this.dgvCustomer.AllowUserToDeleteRows = false;
+            this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCustomer.Location = new System.Drawing.Point(12, 226);
+            this.dgvCustomer.Name = "dgvCustomer";
+            this.dgvCustomer.ReadOnly = true;
+            this.dgvCustomer.RowHeadersWidth = 51;
+            this.dgvCustomer.RowTemplate.Height = 24;
+            this.dgvCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCustomer.ShowCellToolTips = false;
+            this.dgvCustomer.Size = new System.Drawing.Size(516, 202);
+            this.dgvCustomer.TabIndex = 0;
             // 
-            // button9
+            // entCustomerLast
             // 
-            this.button9.Location = new System.Drawing.Point(179, 184);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(216, 53);
-            this.button9.TabIndex = 4;
-            this.button9.Text = "S O A P Notes";
-            this.button9.UseVisualStyleBackColor = true;
+            this.entCustomerLast.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.entCustomerLast.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.entCustomerLast.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entCustomerLast.ForeColor = System.Drawing.Color.White;
+            this.entCustomerLast.Location = new System.Drawing.Point(24, 47);
+            this.entCustomerLast.Name = "entCustomerLast";
+            this.entCustomerLast.Size = new System.Drawing.Size(138, 21);
+            this.entCustomerLast.TabIndex = 1;
+            this.entCustomerLast.Text = "Last Name";
             // 
-            // button8
+            // entCustomerFirst
             // 
-            this.button8.Location = new System.Drawing.Point(179, 111);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(216, 53);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Missed Appointments ";
-            this.button8.UseVisualStyleBackColor = true;
+            this.entCustomerFirst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.entCustomerFirst.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.entCustomerFirst.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entCustomerFirst.ForeColor = System.Drawing.Color.White;
+            this.entCustomerFirst.Location = new System.Drawing.Point(196, 47);
+            this.entCustomerFirst.Name = "entCustomerFirst";
+            this.entCustomerFirst.Size = new System.Drawing.Size(138, 21);
+            this.entCustomerFirst.TabIndex = 2;
+            this.entCustomerFirst.Text = "First Name";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TherapyBuddy.Properties.Resources.blankprofile;
+            this.pictureBox1.Location = new System.Drawing.Point(360, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(155, 155);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnGoBack
+            // 
+            this.btnGoBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.btnGoBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGoBack.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGoBack.Location = new System.Drawing.Point(12, 156);
+            this.btnGoBack.Name = "btnGoBack";
+            this.btnGoBack.Size = new System.Drawing.Size(134, 47);
+            this.btnGoBack.TabIndex = 4;
+            this.btnGoBack.Text = "Go Back";
+            this.btnGoBack.UseVisualStyleBackColor = false;
+            this.btnGoBack.Click += new System.EventHandler(this.BtnGoBack_Click);
             // 
             // FrmCustomerLookUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 450);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.ClientSize = new System.Drawing.Size(542, 440);
+            this.Controls.Add(this.btnGoBack);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.entCustomerFirst);
+            this.Controls.Add(this.entCustomerLast);
+            this.Controls.Add(this.dgvCustomer);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCustomerLookUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCustomerLookUp";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.DataGridView dgvCustomer;
+        private System.Windows.Forms.TextBox entCustomerLast;
+        private System.Windows.Forms.TextBox entCustomerFirst;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnGoBack;
     }
 }

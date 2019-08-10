@@ -33,10 +33,10 @@
             this.btnMyAccount = new System.Windows.Forms.Button();
             this.btnCustomerLookup = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
-            this.pbIcon = new System.Windows.Forms.PictureBox();
             this.lblClose = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.pbIcon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,6 +65,7 @@
             this.btnCustomerLookup.TabIndex = 1;
             this.btnCustomerLookup.Text = "Customer Look up ";
             this.btnCustomerLookup.UseVisualStyleBackColor = false;
+            this.btnCustomerLookup.Click += new System.EventHandler(this.BtnCustomerLookup_Click);
             // 
             // btnReports
             // 
@@ -77,18 +78,6 @@
             this.btnReports.TabIndex = 2;
             this.btnReports.Text = "Reports";
             this.btnReports.UseVisualStyleBackColor = false;
-            // 
-            // pbIcon
-            // 
-            this.pbIcon.BackgroundImage = global::TherapyBuddy.Properties.Resources.icon;
-            this.pbIcon.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbIcon.InitialImage")));
-            this.pbIcon.Location = new System.Drawing.Point(129, 51);
-            this.pbIcon.Name = "pbIcon";
-            this.pbIcon.Size = new System.Drawing.Size(64, 64);
-            this.pbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbIcon.TabIndex = 3;
-            this.pbIcon.TabStop = false;
-            this.pbIcon.WaitOnLoad = true;
             // 
             // lblClose
             // 
@@ -113,6 +102,18 @@
             this.timer2.Interval = 1;
             this.timer2.Tick += new System.EventHandler(this.Timer2_Tick);
             // 
+            // pbIcon
+            // 
+            this.pbIcon.BackgroundImage = global::TherapyBuddy.Properties.Resources.icon;
+            this.pbIcon.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbIcon.InitialImage")));
+            this.pbIcon.Location = new System.Drawing.Point(129, 51);
+            this.pbIcon.Name = "pbIcon";
+            this.pbIcon.Size = new System.Drawing.Size(64, 64);
+            this.pbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbIcon.TabIndex = 3;
+            this.pbIcon.TabStop = false;
+            this.pbIcon.WaitOnLoad = true;
+            // 
             // frmTherapistPortal
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -127,7 +128,6 @@
             this.MinimizeBox = false;
             this.Name = "frmTherapistPortal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Therapist Portal";
             ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

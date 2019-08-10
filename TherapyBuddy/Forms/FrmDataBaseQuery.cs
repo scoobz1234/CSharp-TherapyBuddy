@@ -47,5 +47,6 @@ namespace TherapyBuddy.Forms
                 MessageBox.Show(ex.Message);
             }
         }
+
     }
 }

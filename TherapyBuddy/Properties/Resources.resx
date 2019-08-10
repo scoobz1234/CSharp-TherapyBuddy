@@ -121,9 +121,6 @@
   <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lock (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lock (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="lock (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lock (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -132,5 +129,11 @@
   </data>
   <data name="user (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user (4)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blankprofile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blankprofile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

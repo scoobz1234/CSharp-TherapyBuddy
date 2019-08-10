@@ -44,5 +44,13 @@ namespace TherapyBuddy
                 timer2.Stop();
             }
         }
+
+        private void BtnCustomerLookup_Click(object sender, EventArgs e)
+        {
+            FrmCustomerLookUp clu = new FrmCustomerLookUp();
+            clu.TopMost = true;
+            clu.Show();
+            Hide();
+        }
     }
 }

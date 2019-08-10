@@ -95,8 +95,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Client.cs" />
     <Compile Include="Classes\NotificationService.cs" />
     <Compile Include="Classes\Connection.cs" />
+    <Compile Include="Classes\Therapist.cs" />
     <Compile Include="Forms\FrmClientPortal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,18 +128,6 @@
     </Compile>
     <Compile Include="Forms\FrmTherapistPortal.Designer.cs">
       <DependentUpon>FrmTherapistPortal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmRegistrationPortal_old.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmRegistrationPortal_old.Designer.cs">
-      <DependentUpon>FrmRegistrationPortal_old.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmCustomerLookUp_old.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmCustomerLookUp_old.Designer.cs">
-      <DependentUpon>FrmCustomerLookUp_old.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmClientPortal_old.cs">
       <SubType>Form</SubType>
@@ -180,12 +170,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmTherapistPortal.resx">
       <DependentUpon>FrmTherapistPortal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmRegistrationPortal_old.resx">
-      <DependentUpon>FrmRegistrationPortal_old.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmCustomerLookUp_old.resx">
-      <DependentUpon>FrmCustomerLookUp_old.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmClientPortal_old.resx">
       <DependentUpon>FrmClientPortal_old.cs</DependentUpon>
@@ -230,6 +214,7 @@
     <None Include="Resources\lock %283%291.png" />
     <None Include="Resources\user %283%291.png" />
     <None Include="Resources\user %284%291.png" />
+    <None Include="Resources\blankprofile.png" />
     <Content Include="RuntimeTextTemplate1.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>RuntimeTextTemplate1.cs</LastGenOutput>
