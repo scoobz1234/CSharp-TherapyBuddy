@@ -11,13 +11,15 @@ namespace TherapyBuddy
         /// Therapy Buddy is a program created by UAT students to aid Therapists in the process
         /// of ensuring proper documentation is performed.
         /// </summary>
+        
         [STAThread]
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLogin());
+            frmLogin loginForm = new frmLogin();
+            Application.Run(loginForm);
 
         }
     }

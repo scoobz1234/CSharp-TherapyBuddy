@@ -28,9 +28,9 @@ namespace TherapyBuddy.Forms
             // btnTherapist
             // 
             this.btnTherapist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnTherapist.Location = new System.Drawing.Point(98, 63);
+            this.btnTherapist.Location = new System.Drawing.Point(50, 81);
             this.btnTherapist.Name = "btnTherapist";
-            this.btnTherapist.Size = new System.Drawing.Size(238, 64);
+            this.btnTherapist.Size = new System.Drawing.Size(250, 48);
             this.btnTherapist.TabIndex = 4;
             this.btnTherapist.Text = "Therapist";
             this.btnTherapist.UseVisualStyleBackColor = true;
@@ -39,9 +39,9 @@ namespace TherapyBuddy.Forms
             // btnClient
             // 
             this.btnClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnClient.Location = new System.Drawing.Point(98, 255);
+            this.btnClient.Location = new System.Drawing.Point(50, 214);
             this.btnClient.Name = "btnClient";
-            this.btnClient.Size = new System.Drawing.Size(238, 64);
+            this.btnClient.Size = new System.Drawing.Size(250, 48);
             this.btnClient.TabIndex = 5;
             this.btnClient.Text = "Client";
             this.btnClient.UseVisualStyleBackColor = true;
@@ -50,9 +50,9 @@ namespace TherapyBuddy.Forms
             // btnEmployee
             // 
             this.btnEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnEmployee.Location = new System.Drawing.Point(98, 159);
+            this.btnEmployee.Location = new System.Drawing.Point(50, 149);
             this.btnEmployee.Name = "btnEmployee";
-            this.btnEmployee.Size = new System.Drawing.Size(238, 64);
+            this.btnEmployee.Size = new System.Drawing.Size(250, 48);
             this.btnEmployee.TabIndex = 6;
             this.btnEmployee.Text = "Employee";
             this.btnEmployee.UseVisualStyleBackColor = true;
@@ -61,7 +61,7 @@ namespace TherapyBuddy.Forms
             // btnLogout
             // 
             this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnLogout.Location = new System.Drawing.Point(340, 379);
+            this.btnLogout.Location = new System.Drawing.Point(214, 280);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(86, 49);
             this.btnLogout.TabIndex = 7;
@@ -71,13 +71,14 @@ namespace TherapyBuddy.Forms
             // 
             // FrmMainMenu
             // 
-            this.ClientSize = new System.Drawing.Size(438, 440);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.ClientSize = new System.Drawing.Size(337, 440);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnEmployee);
             this.Controls.Add(this.btnClient);
             this.Controls.Add(this.btnTherapist);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMainMenu";
-            this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.MainMenuForm_Load);
             this.ResumeLayout(false);
 
@@ -97,7 +98,7 @@ namespace TherapyBuddy.Forms
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            var login = new FrmLogin();
+            var login = new frmLogin();
             login.Show();
             Hide();
         }

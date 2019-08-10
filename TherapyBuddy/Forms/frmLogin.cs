@@ -10,39 +10,22 @@ using System.Windows.Forms;
 
 namespace TherapyBuddy.Forms
 {
-    public partial class FrmLogin : Form
+    public partial class frmLogin : Form
     {
-        public FrmLogin()
+        
+        public frmLogin()
         {
             InitializeComponent();
-
+            
         }
+
+        frmTherapistPortal tp = new frmTherapistPortal();
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             var mainMenu = new FrmMainMenu();
             mainMenu.Show();
             Hide();
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void lblTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblGreeting_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void LblClose_Click(object sender, EventArgs e)
@@ -77,6 +60,37 @@ namespace TherapyBuddy.Forms
             pbUsername.BackgroundImage = Properties.Resources.user__4_;
             pnlUsername.ForeColor = Color.White;
             entUsername.ForeColor = Color.White;
+        }
+
+        private void BtnSignin_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            tp.Left += 10;
+            if (tp.Left > 1750)
+            {
+                timer1.Stop();
+               // this.TopMost = false;
+                tp.TopMost = true;
+                timer2.Start();
+            }
+        }
+
+        private void Timer2_Tick(object sender, EventArgs e)
+        {
+            tp.Left -= 10;
+            if (tp.Left <= 1367)
+            {
+                timer2.Stop();
+            }
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            tp.Show();
         }
     }
 }
