@@ -29,11 +29,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
-            this.pbIcon = new System.Windows.Forms.PictureBox();
-            this.pbUsername = new System.Windows.Forms.PictureBox();
             this.entUsername = new System.Windows.Forms.TextBox();
             this.entPassword = new System.Windows.Forms.TextBox();
-            this.pbPassword = new System.Windows.Forms.PictureBox();
             this.btnSignin = new System.Windows.Forms.Button();
             this.pnlUsername = new System.Windows.Forms.Panel();
             this.pnlPassword = new System.Windows.Forms.Panel();
@@ -41,33 +38,15 @@
             this.lblClose = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUsername)).BeginInit();
+            this.pbEye = new System.Windows.Forms.PictureBox();
+            this.pbPassword = new System.Windows.Forms.PictureBox();
+            this.pbUsername = new System.Windows.Forms.PictureBox();
+            this.pbIcon = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPassword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUsername)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbIcon
-            // 
-            this.pbIcon.BackgroundImage = global::TherapyBuddy.Properties.Resources.icon;
-            this.pbIcon.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbIcon.InitialImage")));
-            this.pbIcon.Location = new System.Drawing.Point(135, 47);
-            this.pbIcon.Name = "pbIcon";
-            this.pbIcon.Size = new System.Drawing.Size(64, 64);
-            this.pbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbIcon.TabIndex = 0;
-            this.pbIcon.TabStop = false;
-            this.pbIcon.WaitOnLoad = true;
-            // 
-            // pbUsername
-            // 
-            this.pbUsername.BackgroundImage = global::TherapyBuddy.Properties.Resources.user__4_;
-            this.pbUsername.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbUsername.InitialImage")));
-            this.pbUsername.Location = new System.Drawing.Point(45, 151);
-            this.pbUsername.Name = "pbUsername";
-            this.pbUsername.Size = new System.Drawing.Size(24, 24);
-            this.pbUsername.TabIndex = 1;
-            this.pbUsername.TabStop = false;
-            this.pbUsername.WaitOnLoad = true;
             // 
             // entUsername
             // 
@@ -90,21 +69,11 @@
             this.entPassword.ForeColor = System.Drawing.Color.White;
             this.entPassword.Location = new System.Drawing.Point(88, 216);
             this.entPassword.Name = "entPassword";
+            this.entPassword.PasswordChar = '*';
             this.entPassword.Size = new System.Drawing.Size(185, 20);
             this.entPassword.TabIndex = 5;
             this.entPassword.Text = "Password";
             this.entPassword.Click += new System.EventHandler(this.EntPassword_Click);
-            // 
-            // pbPassword
-            // 
-            this.pbPassword.BackgroundImage = global::TherapyBuddy.Properties.Resources.user__4_;
-            this.pbPassword.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPassword.InitialImage")));
-            this.pbPassword.Location = new System.Drawing.Point(45, 212);
-            this.pbPassword.Name = "pbPassword";
-            this.pbPassword.Size = new System.Drawing.Size(24, 24);
-            this.pbPassword.TabIndex = 4;
-            this.pbPassword.TabStop = false;
-            this.pbPassword.WaitOnLoad = true;
             // 
             // btnSignin
             // 
@@ -112,7 +81,7 @@
             this.btnSignin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignin.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignin.Location = new System.Drawing.Point(45, 279);
+            this.btnSignin.Location = new System.Drawing.Point(45, 296);
             this.btnSignin.Name = "btnSignin";
             this.btnSignin.Size = new System.Drawing.Size(250, 48);
             this.btnSignin.TabIndex = 6;
@@ -143,12 +112,13 @@
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(45, 343);
+            this.btnRegister.Location = new System.Drawing.Point(45, 360);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(250, 48);
             this.btnRegister.TabIndex = 10;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
             // lblClose
             // 
@@ -173,10 +143,55 @@
             this.timer2.Interval = 1;
             this.timer2.Tick += new System.EventHandler(this.Timer2_Tick);
             // 
+            // pbEye
+            // 
+            this.pbEye.BackgroundImage = global::TherapyBuddy.Properties.Resources.eye;
+            this.pbEye.Location = new System.Drawing.Point(280, 216);
+            this.pbEye.Name = "pbEye";
+            this.pbEye.Size = new System.Drawing.Size(16, 16);
+            this.pbEye.TabIndex = 13;
+            this.pbEye.TabStop = false;
+            this.pbEye.Click += new System.EventHandler(this.PictureBox1_Click);
+            // 
+            // pbPassword
+            // 
+            this.pbPassword.BackgroundImage = global::TherapyBuddy.Properties.Resources.user__4_;
+            this.pbPassword.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPassword.InitialImage")));
+            this.pbPassword.Location = new System.Drawing.Point(45, 212);
+            this.pbPassword.Name = "pbPassword";
+            this.pbPassword.Size = new System.Drawing.Size(24, 24);
+            this.pbPassword.TabIndex = 4;
+            this.pbPassword.TabStop = false;
+            this.pbPassword.WaitOnLoad = true;
+            // 
+            // pbUsername
+            // 
+            this.pbUsername.BackgroundImage = global::TherapyBuddy.Properties.Resources.user__4_;
+            this.pbUsername.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbUsername.InitialImage")));
+            this.pbUsername.Location = new System.Drawing.Point(45, 151);
+            this.pbUsername.Name = "pbUsername";
+            this.pbUsername.Size = new System.Drawing.Size(24, 24);
+            this.pbUsername.TabIndex = 1;
+            this.pbUsername.TabStop = false;
+            this.pbUsername.WaitOnLoad = true;
+            // 
+            // pbIcon
+            // 
+            this.pbIcon.BackgroundImage = global::TherapyBuddy.Properties.Resources.icon;
+            this.pbIcon.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbIcon.InitialImage")));
+            this.pbIcon.Location = new System.Drawing.Point(135, 47);
+            this.pbIcon.Name = "pbIcon";
+            this.pbIcon.Size = new System.Drawing.Size(64, 64);
+            this.pbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbIcon.TabIndex = 0;
+            this.pbIcon.TabStop = false;
+            this.pbIcon.WaitOnLoad = true;
+            // 
             // frmLogin
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(337, 440);
+            this.Controls.Add(this.pbEye);
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.pnlPassword);
@@ -194,9 +209,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
             this.Load += new System.EventHandler(this.FrmLogin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUsername)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUsername)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,6 +232,7 @@
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.PictureBox pbEye;
     }
 }
 

@@ -99,6 +99,13 @@
     <Compile Include="Classes\NotificationService.cs" />
     <Compile Include="Classes\Connection.cs" />
     <Compile Include="Classes\Therapist.cs" />
+    <Compile Include="Classes\User.cs" />
+    <Compile Include="Forms\FrmRegistrarPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRegistrarPortal.Designer.cs">
+      <DependentUpon>FrmRegistrarPortal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmClientPortal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,12 +136,6 @@
     <Compile Include="Forms\FrmTherapistPortal.Designer.cs">
       <DependentUpon>FrmTherapistPortal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmClientPortal_old.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmClientPortal_old.Designer.cs">
-      <DependentUpon>FrmClientPortal_old.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FrmMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +144,12 @@
     </Compile>
     <Compile Include="Forms\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmViewSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmViewSchedule.Designer.cs">
+      <DependentUpon>FrmViewSchedule.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -165,20 +172,23 @@
     <EmbeddedResource Include="Forms\FrmDataBaseQuery.resx">
       <DependentUpon>FrmDataBaseQuery.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRegistrarPortal.resx">
+      <DependentUpon>FrmRegistrarPortal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmRegistrationPortal.resx">
       <DependentUpon>FrmRegistrationPortal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmTherapistPortal.resx">
       <DependentUpon>FrmTherapistPortal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmClientPortal_old.resx">
-      <DependentUpon>FrmClientPortal_old.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmMainMenu.resx">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmViewSchedule.resx">
+      <DependentUpon>FrmViewSchedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -215,6 +225,8 @@
     <None Include="Resources\user %283%291.png" />
     <None Include="Resources\user %284%291.png" />
     <None Include="Resources\blankprofile.png" />
+    <None Include="Resources\eyeHovered.png" />
+    <None Include="Resources\eye.png" />
     <Content Include="RuntimeTextTemplate1.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>RuntimeTextTemplate1.cs</LastGenOutput>

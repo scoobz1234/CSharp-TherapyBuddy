@@ -52,5 +52,12 @@ namespace TherapyBuddy
             clu.Show();
             Hide();
         }
+
+        private void BtnReports_Click(object sender, EventArgs e)
+        {
+            FrmViewSchedule vs = new FrmViewSchedule();
+            vs.Show();
+            vs.TopMost = true;
+        }
     }
 }

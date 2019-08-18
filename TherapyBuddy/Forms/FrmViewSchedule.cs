@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace TherapyBuddy.Forms
 {
-    public partial class ClientPortalForm : Form
+    public partial class FrmViewSchedule : Form
     {
-        public ClientPortalForm()
+        public FrmViewSchedule()
         {
             InitializeComponent();
-        }
-
-        private void ClientPortalForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

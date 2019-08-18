@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace TherapyBuddy.Classes
 {
-    class Client
+    public class Client
     {
         public string LastName { get; set; }
         public string FirstName { get; set; }
+        public string SoapNote { get; set; }
 
     }
 }

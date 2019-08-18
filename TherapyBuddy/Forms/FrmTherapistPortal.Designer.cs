@@ -76,8 +76,9 @@
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(250, 48);
             this.btnReports.TabIndex = 2;
-            this.btnReports.Text = "Reports";
+            this.btnReports.Text = "Schedule";
             this.btnReports.UseVisualStyleBackColor = false;
+            this.btnReports.Click += new System.EventHandler(this.BtnReports_Click);
             // 
             // lblClose
             // 
