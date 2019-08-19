@@ -28,77 +28,115 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button6 = new System.Windows.Forms.Button();
-            this.richTextBox8 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.btnConfirm = new System.Windows.Forms.Button();
+            this.entFirstName = new System.Windows.Forms.TextBox();
+            this.entLastName = new System.Windows.Forms.TextBox();
+            this.entUsername = new System.Windows.Forms.TextBox();
+            this.entPassword = new System.Windows.Forms.TextBox();
+            this.entPasswordConfirm = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button6
+            // btnConfirm
             // 
-            this.button6.Location = new System.Drawing.Point(25, 340);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(286, 54);
-            this.button6.TabIndex = 17;
-            this.button6.Text = "Register";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnConfirm.Location = new System.Drawing.Point(25, 374);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(286, 54);
+            this.btnConfirm.TabIndex = 17;
+            this.btnConfirm.Text = "Register";
+            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.Button6_Click);
             // 
-            // richTextBox8
+            // entFirstName
             // 
-            this.richTextBox8.Location = new System.Drawing.Point(37, 263);
-            this.richTextBox8.Name = "richTextBox8";
-            this.richTextBox8.Size = new System.Drawing.Size(264, 52);
-            this.richTextBox8.TabIndex = 16;
-            this.richTextBox8.Text = "";
+            this.entFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.entFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.entFirstName.Font = new System.Drawing.Font("Arial", 18F);
+            this.entFirstName.ForeColor = System.Drawing.Color.White;
+            this.entFirstName.Location = new System.Drawing.Point(41, 34);
+            this.entFirstName.MaxLength = 255;
+            this.entFirstName.Name = "entFirstName";
+            this.entFirstName.Size = new System.Drawing.Size(251, 42);
+            this.entFirstName.TabIndex = 18;
+            this.entFirstName.Text = "First Name";
             // 
-            // richTextBox7
+            // entLastName
             // 
-            this.richTextBox7.Location = new System.Drawing.Point(37, 121);
-            this.richTextBox7.Name = "richTextBox7";
-            this.richTextBox7.Size = new System.Drawing.Size(264, 52);
-            this.richTextBox7.TabIndex = 15;
-            this.richTextBox7.Text = "";
+            this.entLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.entLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.entLastName.Font = new System.Drawing.Font("Arial", 18F);
+            this.entLastName.ForeColor = System.Drawing.Color.White;
+            this.entLastName.Location = new System.Drawing.Point(41, 92);
+            this.entLastName.MaxLength = 255;
+            this.entLastName.Name = "entLastName";
+            this.entLastName.Size = new System.Drawing.Size(251, 42);
+            this.entLastName.TabIndex = 19;
+            this.entLastName.Text = "Last Name";
             // 
-            // richTextBox6
+            // entUsername
             // 
-            this.richTextBox6.Location = new System.Drawing.Point(37, 189);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.Size = new System.Drawing.Size(264, 52);
-            this.richTextBox6.TabIndex = 14;
-            this.richTextBox6.Text = "";
+            this.entUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.entUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.entUsername.Font = new System.Drawing.Font("Arial", 18F);
+            this.entUsername.ForeColor = System.Drawing.Color.White;
+            this.entUsername.Location = new System.Drawing.Point(41, 155);
+            this.entUsername.MaxLength = 255;
+            this.entUsername.Name = "entUsername";
+            this.entUsername.Size = new System.Drawing.Size(251, 42);
+            this.entUsername.TabIndex = 20;
+            this.entUsername.Text = "Username";
             // 
-            // richTextBox5
+            // entPassword
             // 
-            this.richTextBox5.Location = new System.Drawing.Point(37, 46);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(264, 52);
-            this.richTextBox5.TabIndex = 13;
-            this.richTextBox5.Text = "";
+            this.entPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.entPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.entPassword.Font = new System.Drawing.Font("Arial", 18F);
+            this.entPassword.ForeColor = System.Drawing.Color.White;
+            this.entPassword.Location = new System.Drawing.Point(41, 219);
+            this.entPassword.MaxLength = 255;
+            this.entPassword.Name = "entPassword";
+            this.entPassword.Size = new System.Drawing.Size(251, 42);
+            this.entPassword.TabIndex = 21;
+            this.entPassword.Text = "Password";
+            // 
+            // entPasswordConfirm
+            // 
+            this.entPasswordConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.entPasswordConfirm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.entPasswordConfirm.Font = new System.Drawing.Font("Arial", 18F);
+            this.entPasswordConfirm.ForeColor = System.Drawing.Color.White;
+            this.entPasswordConfirm.Location = new System.Drawing.Point(41, 279);
+            this.entPasswordConfirm.MaxLength = 255;
+            this.entPasswordConfirm.Name = "entPasswordConfirm";
+            this.entPasswordConfirm.Size = new System.Drawing.Size(251, 42);
+            this.entPasswordConfirm.TabIndex = 22;
+            this.entPasswordConfirm.Text = "Confirm Password";
             // 
             // FrmRegistrationPortal
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(337, 440);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.richTextBox8);
-            this.Controls.Add(this.richTextBox7);
-            this.Controls.Add(this.richTextBox6);
-            this.Controls.Add(this.richTextBox5);
+            this.Controls.Add(this.entPasswordConfirm);
+            this.Controls.Add(this.entPassword);
+            this.Controls.Add(this.entUsername);
+            this.Controls.Add(this.entLastName);
+            this.Controls.Add(this.entFirstName);
+            this.Controls.Add(this.btnConfirm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmRegistrationPortal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRegistrationPortal";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.RichTextBox richTextBox8;
-        private System.Windows.Forms.RichTextBox richTextBox7;
-        private System.Windows.Forms.RichTextBox richTextBox6;
-        private System.Windows.Forms.RichTextBox richTextBox5;
+        private System.Windows.Forms.Button btnConfirm;
+        private System.Windows.Forms.TextBox entFirstName;
+        private System.Windows.Forms.TextBox entLastName;
+        private System.Windows.Forms.TextBox entUsername;
+        private System.Windows.Forms.TextBox entPassword;
+        private System.Windows.Forms.TextBox entPasswordConfirm;
     }
 }
