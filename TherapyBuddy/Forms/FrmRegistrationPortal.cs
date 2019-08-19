@@ -21,13 +21,13 @@ namespace TherapyBuddy.Forms
 
         private void Button6_Click(object sender, EventArgs e)
         {
-            if (entFirstName.Text != null)
+            if (!string.IsNullOrWhiteSpace(entFirstName.Text))
             {
-                if (entLastName.Text != null)
+                if (!string.IsNullOrWhiteSpace(entLastName.Text))
                 {
-                    if (entUsername.Text != null)
+                    if (!string.IsNullOrWhiteSpace(entUsername.Text))
                     {
-                        if (entPassword.Text != null)
+                        if (!string.IsNullOrWhiteSpace(entPassword.Text))
                         {
                             if (entPassword.Text == entPasswordConfirm.Text)
                             {
@@ -54,6 +54,11 @@ namespace TherapyBuddy.Forms
                                     //just stays open...
                                 }
                                 db.CloseConnection();
+                                entFirstName.Clear();
+                                entLastName.Clear();
+                                entUsername.Clear();
+                                entPassword.Clear();
+                                entPasswordConfirm.Clear();
                                 MessageBox.Show("User added Successfully!");
                             }
                             else
@@ -85,6 +90,12 @@ namespace TherapyBuddy.Forms
         private void LblExit_Click(object sender, EventArgs e)
         {
             TopMost = false;
+        }
+
+        private void ClickToClear(object sender, EventArgs e)
+        {
+            TextBox t = (TextBox)sender;
+            t.Clear();
         }
     }
 }

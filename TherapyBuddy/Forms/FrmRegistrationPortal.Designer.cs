@@ -59,6 +59,7 @@
             this.entFirstName.Size = new System.Drawing.Size(251, 42);
             this.entFirstName.TabIndex = 18;
             this.entFirstName.Text = "First Name";
+            this.entFirstName.Click += new System.EventHandler(this.ClickToClear);
             // 
             // entLastName
             // 
@@ -72,6 +73,7 @@
             this.entLastName.Size = new System.Drawing.Size(251, 42);
             this.entLastName.TabIndex = 19;
             this.entLastName.Text = "Last Name";
+            this.entLastName.Click += new System.EventHandler(this.ClickToClear);
             // 
             // entUsername
             // 
@@ -85,6 +87,7 @@
             this.entUsername.Size = new System.Drawing.Size(251, 42);
             this.entUsername.TabIndex = 20;
             this.entUsername.Text = "Username";
+            this.entUsername.Click += new System.EventHandler(this.ClickToClear);
             // 
             // entPassword
             // 
@@ -98,6 +101,7 @@
             this.entPassword.Size = new System.Drawing.Size(251, 42);
             this.entPassword.TabIndex = 21;
             this.entPassword.Text = "Password";
+            this.entPassword.Click += new System.EventHandler(this.ClickToClear);
             // 
             // entPasswordConfirm
             // 
@@ -111,6 +115,7 @@
             this.entPasswordConfirm.Size = new System.Drawing.Size(251, 42);
             this.entPasswordConfirm.TabIndex = 22;
             this.entPasswordConfirm.Text = "Confirm Password";
+            this.entPasswordConfirm.Click += new System.EventHandler(this.ClickToClear);
             // 
             // lblExit
             // 
