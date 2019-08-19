@@ -44,7 +44,7 @@
             this.entCustomerLast.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.entCustomerLast.Font = new System.Drawing.Font("Arial", 18F);
             this.entCustomerLast.ForeColor = System.Drawing.Color.White;
-            this.entCustomerLast.Location = new System.Drawing.Point(176, 32);
+            this.entCustomerLast.Location = new System.Drawing.Point(176, 22);
             this.entCustomerLast.Name = "entCustomerLast";
             this.entCustomerLast.Size = new System.Drawing.Size(161, 35);
             this.entCustomerLast.TabIndex = 1;
@@ -56,7 +56,7 @@
             this.entCustomerFirst.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.entCustomerFirst.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entCustomerFirst.ForeColor = System.Drawing.Color.White;
-            this.entCustomerFirst.Location = new System.Drawing.Point(176, 73);
+            this.entCustomerFirst.Location = new System.Drawing.Point(176, 63);
             this.entCustomerFirst.Name = "entCustomerFirst";
             this.entCustomerFirst.Size = new System.Drawing.Size(161, 35);
             this.entCustomerFirst.TabIndex = 2;
@@ -65,7 +65,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TherapyBuddy.Properties.Resources.blankprofile;
-            this.pictureBox1.Location = new System.Drawing.Point(360, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(360, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(155, 155);
             this.pictureBox1.TabIndex = 3;

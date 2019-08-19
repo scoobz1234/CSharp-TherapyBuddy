@@ -16,5 +16,10 @@ namespace TherapyBuddy.Forms
         {
             InitializeComponent();
         }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+            TopMost = false;
+        }
     }
 }

@@ -81,5 +81,10 @@ namespace TherapyBuddy.Forms
                 MessageBox.Show("First name can not be left empty!");
             }
         }
+
+        private void LblExit_Click(object sender, EventArgs e)
+        {
+            TopMost = false;
+        }
     }
 }

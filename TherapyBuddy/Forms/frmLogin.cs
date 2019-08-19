@@ -100,26 +100,15 @@ namespace TherapyBuddy.Forms
                     string pass = dr["Password"].ToString();
                     string accessType = dr["AccessTypeID"].ToString();                   
                     int access = 0;
-                    int id = 0;
                     int.TryParse(accessType, out access);
+
                     User.Username = user;
                     User.Password = pass;
                     User.AccessType = access;
-                    if (access == 1)
-                    {
-                        string userID = dr["ClientID"].ToString();
-                        int.TryParse(userID, out id);
-                    }
-                    else if (access == 2)
-                    {
-                        string userID = dr["TherapistID"].ToString();
-                        int.TryParse(userID, out id);
-                    }
-                    else
-                    {
-                        string userId = dr["RegistrarID"].ToString();
-                        int.TryParse(userId, out id);
-                    }
+
+                    int id = 0;
+                    string userID = dr["TherapistID"].ToString();
+                    int.TryParse(userID, out id);
 
                     User.ID = id;
                 }

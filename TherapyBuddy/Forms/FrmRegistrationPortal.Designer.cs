@@ -34,6 +34,7 @@
             this.entUsername = new System.Windows.Forms.TextBox();
             this.entPassword = new System.Windows.Forms.TextBox();
             this.entPasswordConfirm = new System.Windows.Forms.TextBox();
+            this.lblExit = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnConfirm
@@ -111,10 +112,24 @@
             this.entPasswordConfirm.TabIndex = 22;
             this.entPasswordConfirm.Text = "Confirm Password";
             // 
+            // lblExit
+            // 
+            this.lblExit.AutoSize = true;
+            this.lblExit.Font = new System.Drawing.Font("Arial", 12F);
+            this.lblExit.ForeColor = System.Drawing.Color.White;
+            this.lblExit.Location = new System.Drawing.Point(311, 1);
+            this.lblExit.Name = "lblExit";
+            this.lblExit.Size = new System.Drawing.Size(23, 23);
+            this.lblExit.TabIndex = 23;
+            this.lblExit.Text = "X";
+            this.lblExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblExit.Click += new System.EventHandler(this.LblExit_Click);
+            // 
             // FrmRegistrationPortal
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(337, 440);
+            this.Controls.Add(this.lblExit);
             this.Controls.Add(this.entPasswordConfirm);
             this.Controls.Add(this.entPassword);
             this.Controls.Add(this.entUsername);
@@ -138,5 +153,6 @@
         private System.Windows.Forms.TextBox entUsername;
         private System.Windows.Forms.TextBox entPassword;
         private System.Windows.Forms.TextBox entPasswordConfirm;
+        private System.Windows.Forms.Label lblExit;
     }
 }

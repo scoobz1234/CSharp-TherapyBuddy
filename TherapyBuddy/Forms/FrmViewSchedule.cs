@@ -135,8 +135,6 @@ namespace TherapyBuddy.Forms
 
             string id = Convert.ToString(selectedRow.Cells[5].Value);
 
-            MessageBox.Show(id.ToString());
-
             FrmCustomerLookUp clu = new FrmCustomerLookUp(id);
             clu.Show();
             clu.TopMost = true;
@@ -146,6 +144,18 @@ namespace TherapyBuddy.Forms
         private void Button2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            int selectedRowIndex = dgvSchedule.SelectedCells[0].RowIndex;
+            DataGridViewRow selectedRow = dgvSchedule.Rows[selectedRowIndex];
+
+            string id = Convert.ToString(selectedRow.Cells[5].Value);
+
+            FrmCustomerLookUp clu = new FrmCustomerLookUp(id);
+            clu.Show();
+            clu.TopMost = true;
         }
     }
 }

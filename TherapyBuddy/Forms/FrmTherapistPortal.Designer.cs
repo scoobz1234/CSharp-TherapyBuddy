@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTherapistPortal));
-            this.btnMyAccount = new System.Windows.Forms.Button();
             this.btnCustomerLookup = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
             this.lblClose = new System.Windows.Forms.Label();
@@ -40,26 +39,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnMyAccount
-            // 
-            this.btnMyAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnMyAccount.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMyAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMyAccount.Font = new System.Drawing.Font("Arial", 10.8F);
-            this.btnMyAccount.ForeColor = System.Drawing.Color.White;
-            this.btnMyAccount.Location = new System.Drawing.Point(44, 380);
-            this.btnMyAccount.Name = "btnMyAccount";
-            this.btnMyAccount.Size = new System.Drawing.Size(250, 48);
-            this.btnMyAccount.TabIndex = 0;
-            this.btnMyAccount.Text = "My Account";
-            this.btnMyAccount.UseVisualStyleBackColor = false;
-            // 
             // btnCustomerLookup
             // 
             this.btnCustomerLookup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
             this.btnCustomerLookup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomerLookup.Font = new System.Drawing.Font("Arial", 10.8F);
-            this.btnCustomerLookup.Location = new System.Drawing.Point(44, 172);
+            this.btnCustomerLookup.Location = new System.Drawing.Point(44, 228);
             this.btnCustomerLookup.Name = "btnCustomerLookup";
             this.btnCustomerLookup.Size = new System.Drawing.Size(250, 48);
             this.btnCustomerLookup.TabIndex = 1;
@@ -72,7 +57,7 @@
             this.btnReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReports.Font = new System.Drawing.Font("Arial", 10.8F);
-            this.btnReports.Location = new System.Drawing.Point(44, 238);
+            this.btnReports.Location = new System.Drawing.Point(44, 323);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(250, 48);
             this.btnReports.TabIndex = 2;
@@ -123,7 +108,6 @@
             this.Controls.Add(this.pbIcon);
             this.Controls.Add(this.btnReports);
             this.Controls.Add(this.btnCustomerLookup);
-            this.Controls.Add(this.btnMyAccount);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -152,7 +136,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button btnMyAccount;
         private System.Windows.Forms.Button btnCustomerLookup;
         private System.Windows.Forms.Button btnReports;
         private System.Windows.Forms.PictureBox pbIcon;
