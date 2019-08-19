@@ -11,6 +11,7 @@ namespace TherapyBuddy.Classes
         public string LastName { get; set; }
         public string FirstName { get; set; }
         public string SoapNote { get; set; }
+        public string AppointmentDate { get; set; }
 
     }
 }

@@ -14,8 +14,13 @@ namespace TherapyBuddy.Forms
         public FrmCustomerLookUp()
         {
             InitializeComponent();
-
             Init();
+        }
+
+        public FrmCustomerLookUp(string id)
+        {
+            InitializeComponent();
+            CustomInit(id);
         }
 
         private void BtnGoBack_Click(object sender, EventArgs e)
@@ -23,56 +28,99 @@ namespace TherapyBuddy.Forms
             Close();
         }
 
+        private void CustomInit(string id)
+        {
+            Connection db = new Connection();
+
+            DataTable table = new DataTable();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlCommand command = new MySqlCommand(
+                "SELECT " +
+                "c.LastName, " +
+                "c.FirstName, " +
+                "a.SOAP " +
+                "FROM " +
+                "appointment a "+
+                "INNER JOIN " +
+                "clients c " +
+                "ON " +
+                "a.ClientID = c.ClientID " +
+                "WHERE " +
+                "a.ClientID = @clientID " +
+                "AND " +
+                "a.TherapistID = @therapistID;", db.GetConnection());
+
+            command.Parameters.Add("@clientID", MySqlDbType.VarChar).Value = id;
+            command.Parameters.Add("@therapistID", MySqlDbType.VarChar).Value = User.ID;
+
+            adapter.SelectCommand = command;
+
+            adapter.Fill(table);
+
+                //List<Client> Clients = new List<Client>();
+
+                foreach (DataRow dr in table.Rows)
+                {
+                    string last = dr["LastName"].ToString();
+                    string first = dr["FirstName"].ToString();
+                    string SOAP = dr["SOAP"].ToString();
+                    Client c = new Client();
+                    c.LastName = last;
+                    c.FirstName = first;
+                    c.SoapNote = SOAP;
+                    Clients.Add(c);
+                }
+            adapter.Update(table);
+        }
+
         private void Init()
         {
-            //Connection conn = new Connection();
-            //MySqlConnection connection = conn.ConnectToDB();
-            
+            Connection db = new Connection();
 
-            //try
-            //{
-            //    MySqlDataAdapter sda = new MySqlDataAdapter();
-            //   // lets build our command(query)
+            try
+            {
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-            //    string command =
-            //        "SELECT " +
-            //        "Customers.customer_data.last_name," +
-            //        "Customers.customer_data.first_name," +
-            //        "Service_Log.service_log.soap_note " +
-            //        "FROM " +
-            //        "Customers.customer_data " +
-            //        "INNER JOIN " +
-            //        "Service_Log.service_log " +
-            //        "ON " +
-            //        "Customers.customer_data.client_id = Service_Log.service_log.client_id";
+                MySqlCommand command = new MySqlCommand(
+                    "SELECT " +
+                    "c.LastName," +
+                    "c.FirstName," +
+                    "a.SOAP, " +
+                    "a.AppointmentDate " +
+                    "FROM " +
+                    "clients c " +
+                    "INNER JOIN " +
+                    "appointment a " +
+                    "ON " +
+                    "c.ClientID = a.ClientID", db.GetConnection());
 
+                DataTable table = new DataTable();
+                BindingSource bSource = new BindingSource();
+                adapter.SelectCommand = command;
+                adapter.Fill(table);
 
-            //    DataTable dbDataset = new DataTable();
-            //    BindingSource bSource = new BindingSource();
-            //    sda.SelectCommand = conn.CustomQuery(connection, command);
-            //    sda.Fill(dbDataset);
+                foreach (DataRow dr in table.Rows)
+                {
+                    string last = dr["LastName"].ToString();
+                    string first = dr["FirstName"].ToString();
+                    string SOAP = dr["SOAP"].ToString();
+                    string date = dr["AppointmentDate"].ToString();
+                    Client c = new Client();
+                    c.LastName = last;
+                    c.FirstName = first;
+                    c.SoapNote = SOAP;
+                    c.AppointmentDate = date;
+                    Clients.Add(c);
+                }
 
-            //    //List<Client> Clients = new List<Client>();
-
-            //    foreach (DataRow dr in dbDataset.Rows)
-            //    {
-            //        string last = dr["last_name"].ToString();
-            //        string first = dr["first_name"].ToString();
-            //        string SOAP = dr["soap_note"].ToString();
-            //        Client c = new Client();
-            //        c.LastName = last;
-            //        c.FirstName = first;
-            //        c.SoapNote = SOAP;
-            //        Clients.Add(c);
-            //    }
-
-            //    bSource.DataSource = dbDataset;
-            //    sda.Update(dbDataset);
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
+                bSource.DataSource = table;
+                adapter.Update(table);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void CbSelectClient_SelectedIndexChanged(object sender, EventArgs e)
@@ -82,7 +130,22 @@ namespace TherapyBuddy.Forms
 
             entCustomerFirst.Text = Clients[index].FirstName;
             entCustomerLast.Text = Clients[index].LastName;
+            if (string.IsNullOrEmpty(Clients[index].SoapNote))
+            {
+                MessageBox.Show("No SOAP note entered for this Appointment","Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
             entSoapNote.Text = Clients[index].SoapNote;
+            entAppDate.Text = Truncate(Clients[index].AppointmentDate, 10);
+        }
+
+        private string Truncate(string value, int maxLength)
+        {
+            if (!string.IsNullOrEmpty(value) && value.Length > maxLength)
+            {
+                return value.Substring(0, maxLength);
+            }
+
+            return value;
         }
 
         private void CbSelectClient_Click(object sender, EventArgs e)
@@ -93,8 +156,7 @@ namespace TherapyBuddy.Forms
             {
                 cbSelectClient.Items.Add($"{c.LastName}, {c.FirstName}");
             }
-
-            
+     
         }
     }
 }

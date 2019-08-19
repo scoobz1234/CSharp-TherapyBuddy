@@ -95,6 +95,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Appointment.cs" />
     <Compile Include="Classes\Client.cs" />
     <Compile Include="Classes\NotificationService.cs" />
     <Compile Include="Classes\Connection.cs" />
@@ -196,6 +197,8 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\TherapyBuddy.Classes.Appointment.datasource" />
+    <None Include="Properties\DataSources\TherapyBuddy.Forms.FrmViewSchedule.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

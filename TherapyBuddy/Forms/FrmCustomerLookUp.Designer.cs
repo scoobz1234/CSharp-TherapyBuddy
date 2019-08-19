@@ -34,6 +34,7 @@
             this.btnGoBack = new System.Windows.Forms.Button();
             this.entSoapNote = new System.Windows.Forms.TextBox();
             this.cbSelectClient = new System.Windows.Forms.ComboBox();
+            this.entAppDate = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,12 +108,25 @@
             this.cbSelectClient.SelectedIndexChanged += new System.EventHandler(this.CbSelectClient_SelectedIndexChanged);
             this.cbSelectClient.Click += new System.EventHandler(this.CbSelectClient_Click);
             // 
+            // entAppDate
+            // 
+            this.entAppDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.entAppDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.entAppDate.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entAppDate.ForeColor = System.Drawing.Color.White;
+            this.entAppDate.Location = new System.Drawing.Point(29, 184);
+            this.entAppDate.Name = "entAppDate";
+            this.entAppDate.Size = new System.Drawing.Size(308, 35);
+            this.entAppDate.TabIndex = 7;
+            this.entAppDate.Text = "Date of Appointment";
+            // 
             // FrmCustomerLookUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(542, 440);
+            this.Controls.Add(this.entAppDate);
             this.Controls.Add(this.cbSelectClient);
             this.Controls.Add(this.entSoapNote);
             this.Controls.Add(this.btnGoBack);
@@ -136,5 +150,6 @@
         private System.Windows.Forms.Button btnGoBack;
         private System.Windows.Forms.TextBox entSoapNote;
         private System.Windows.Forms.ComboBox cbSelectClient;
+        private System.Windows.Forms.TextBox entAppDate;
     }
 }

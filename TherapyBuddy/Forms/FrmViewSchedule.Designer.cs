@@ -28,281 +28,155 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Hour6AM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Hour630AM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Hour7AM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.dgvSchedule = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.AppointmentNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClientName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StartTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EndTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Service = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClientID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.frmViewScheduleBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.appointmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.frmViewScheduleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSchedule)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frmViewScheduleBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appointmentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frmViewScheduleBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvSchedule
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Hour6AM,
-            this.Hour630AM,
-            this.Hour7AM,
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9,
-            this.Column10,
-            this.Column24,
-            this.Column11,
-            this.Column12,
-            this.Column13,
-            this.Column14,
-            this.Column15,
-            this.Column16,
-            this.Column17,
-            this.Column18,
-            this.Column19,
-            this.Column20,
-            this.Column21,
-            this.Column22,
-            this.Column23});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1356, 939);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvSchedule.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.dgvSchedule.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSchedule.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AppointmentNumber,
+            this.ClientName,
+            this.StartTime,
+            this.EndTime,
+            this.Service,
+            this.ClientID});
+            this.dgvSchedule.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvSchedule.Location = new System.Drawing.Point(12, 12);
+            this.dgvSchedule.Name = "dgvSchedule";
+            this.dgvSchedule.RowHeadersVisible = false;
+            this.dgvSchedule.RowHeadersWidth = 51;
+            this.dgvSchedule.RowTemplate.Height = 24;
+            this.dgvSchedule.Size = new System.Drawing.Size(573, 252);
+            this.dgvSchedule.TabIndex = 0;
+            this.dgvSchedule.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.DgvSchedule_MouseDoubleClick);
             // 
-            // Hour6AM
+            // button1
             // 
-            this.Hour6AM.HeaderText = "6:00";
-            this.Hour6AM.MinimumWidth = 6;
-            this.Hour6AM.Name = "Hour6AM";
-            this.Hour6AM.Width = 125;
+            this.button1.Font = new System.Drawing.Font("Arial", 16F);
+            this.button1.Location = new System.Drawing.Point(376, 279);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(209, 58);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Lookup";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // Hour630AM
+            // button2
             // 
-            this.Hour630AM.HeaderText = "6:30";
-            this.Hour630AM.MinimumWidth = 6;
-            this.Hour630AM.Name = "Hour630AM";
-            this.Hour630AM.Width = 125;
+            this.button2.Font = new System.Drawing.Font("Arial", 16F);
+            this.button2.Location = new System.Drawing.Point(12, 279);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(209, 58);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Go Back";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // Hour7AM
+            // lblTime
             // 
-            this.Hour7AM.HeaderText = "7:00";
-            this.Hour7AM.MinimumWidth = 6;
-            this.Hour7AM.Name = "Hour7AM";
-            this.Hour7AM.Width = 125;
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.White;
+            this.lblTime.Location = new System.Drawing.Point(246, 290);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(105, 33);
+            this.lblTime.TabIndex = 3;
+            this.lblTime.Text = "00:00:00";
             // 
-            // Column1
+            // AppointmentNumber
             // 
-            this.Column1.HeaderText = "7:30";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
+            this.AppointmentNumber.HeaderText = "Appointment";
+            this.AppointmentNumber.MinimumWidth = 6;
+            this.AppointmentNumber.Name = "AppointmentNumber";
             // 
-            // Column2
+            // ClientName
             // 
-            this.Column2.HeaderText = "8:00";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
+            this.ClientName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ClientName.HeaderText = "Client Name";
+            this.ClientName.MinimumWidth = 6;
+            this.ClientName.Name = "ClientName";
             // 
-            // Column3
+            // StartTime
             // 
-            this.Column3.HeaderText = "8:30";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
+            this.StartTime.HeaderText = "Start Time";
+            this.StartTime.MinimumWidth = 6;
+            this.StartTime.Name = "StartTime";
             // 
-            // Column4
+            // EndTime
             // 
-            this.Column4.HeaderText = "9:00";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
+            this.EndTime.HeaderText = "End Time";
+            this.EndTime.MinimumWidth = 6;
+            this.EndTime.Name = "EndTime";
             // 
-            // Column5
+            // Service
             // 
-            this.Column5.HeaderText = "9:30";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
+            this.Service.HeaderText = "Service";
+            this.Service.MinimumWidth = 6;
+            this.Service.Name = "Service";
             // 
-            // Column6
+            // ClientID
             // 
-            this.Column6.HeaderText = "10:00";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
+            this.ClientID.HeaderText = "ClientID";
+            this.ClientID.MinimumWidth = 6;
+            this.ClientID.Name = "ClientID";
+            this.ClientID.Width = 125;
             // 
-            // Column7
+            // frmViewScheduleBindingSource1
             // 
-            this.Column7.HeaderText = "10:30";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 125;
+            this.frmViewScheduleBindingSource1.DataSource = typeof(TherapyBuddy.Forms.FrmViewSchedule);
             // 
-            // Column8
+            // appointmentBindingSource
             // 
-            this.Column8.HeaderText = "11:00";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 125;
+            this.appointmentBindingSource.DataSource = typeof(TherapyBuddy.Classes.Appointment);
             // 
-            // Column9
+            // frmViewScheduleBindingSource
             // 
-            this.Column9.HeaderText = "11:30";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 125;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "12:00";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 125;
-            // 
-            // Column24
-            // 
-            this.Column24.HeaderText = "12:30";
-            this.Column24.MinimumWidth = 6;
-            this.Column24.Name = "Column24";
-            this.Column24.Width = 125;
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "1:00";
-            this.Column11.MinimumWidth = 6;
-            this.Column11.Name = "Column11";
-            this.Column11.Width = 125;
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "1:30";
-            this.Column12.MinimumWidth = 6;
-            this.Column12.Name = "Column12";
-            this.Column12.Width = 125;
-            // 
-            // Column13
-            // 
-            this.Column13.HeaderText = "2:00";
-            this.Column13.MinimumWidth = 6;
-            this.Column13.Name = "Column13";
-            this.Column13.Width = 125;
-            // 
-            // Column14
-            // 
-            this.Column14.HeaderText = "2:30";
-            this.Column14.MinimumWidth = 6;
-            this.Column14.Name = "Column14";
-            this.Column14.Width = 125;
-            // 
-            // Column15
-            // 
-            this.Column15.HeaderText = "3:00";
-            this.Column15.MinimumWidth = 6;
-            this.Column15.Name = "Column15";
-            this.Column15.Width = 125;
-            // 
-            // Column16
-            // 
-            this.Column16.HeaderText = "3:30";
-            this.Column16.MinimumWidth = 6;
-            this.Column16.Name = "Column16";
-            this.Column16.Width = 125;
-            // 
-            // Column17
-            // 
-            this.Column17.HeaderText = "4:00";
-            this.Column17.MinimumWidth = 6;
-            this.Column17.Name = "Column17";
-            this.Column17.Width = 125;
-            // 
-            // Column18
-            // 
-            this.Column18.HeaderText = "4:30";
-            this.Column18.MinimumWidth = 6;
-            this.Column18.Name = "Column18";
-            this.Column18.Width = 125;
-            // 
-            // Column19
-            // 
-            this.Column19.HeaderText = "5:00";
-            this.Column19.MinimumWidth = 6;
-            this.Column19.Name = "Column19";
-            this.Column19.Width = 125;
-            // 
-            // Column20
-            // 
-            this.Column20.HeaderText = "5:30";
-            this.Column20.MinimumWidth = 6;
-            this.Column20.Name = "Column20";
-            this.Column20.Width = 125;
-            // 
-            // Column21
-            // 
-            this.Column21.HeaderText = "6:00";
-            this.Column21.MinimumWidth = 6;
-            this.Column21.Name = "Column21";
-            this.Column21.Width = 125;
-            // 
-            // Column22
-            // 
-            this.Column22.HeaderText = "6:30";
-            this.Column22.MinimumWidth = 6;
-            this.Column22.Name = "Column22";
-            this.Column22.Width = 125;
-            // 
-            // Column23
-            // 
-            this.Column23.HeaderText = "7:00";
-            this.Column23.MinimumWidth = 6;
-            this.Column23.Name = "Column23";
-            this.Column23.Width = 125;
+            this.frmViewScheduleBindingSource.DataSource = typeof(TherapyBuddy.Forms.FrmViewSchedule);
             // 
             // FrmViewSchedule
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(1380, 963);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(599, 349);
+            this.Controls.Add(this.lblTime);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dgvSchedule);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmViewSchedule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmViewSchedule";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmViewSchedule_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSchedule)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frmViewScheduleBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appointmentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frmViewScheduleBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvSchedule;
         private System.Windows.Forms.DataGridViewTextBoxColumn Hour6AM;
         private System.Windows.Forms.DataGridViewTextBoxColumn Hour630AM;
         private System.Windows.Forms.DataGridViewTextBoxColumn Hour7AM;
@@ -330,5 +204,22 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn endTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn serviceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource appointmentBindingSource;
+        private System.Windows.Forms.BindingSource frmViewScheduleBindingSource1;
+        private System.Windows.Forms.BindingSource frmViewScheduleBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AppointmentNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClientName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StartTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EndTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Service;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClientID;
     }
 }

@@ -12,6 +12,7 @@ namespace TherapyBuddy.Classes
         private static string username;
         private static string password;
         private static int accessType;
+        private static int id;
         private static int windowLeft;
 
 
@@ -31,6 +32,12 @@ namespace TherapyBuddy.Classes
         {
             get { return accessType; }
             set { accessType = value; }
+        }
+
+        public static int ID 
+        {
+            get { return id; }
+            set { id = value; }
         }
 
         public static int WindowLeft
